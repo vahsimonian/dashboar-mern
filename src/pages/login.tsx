@@ -4,7 +4,14 @@ import { useEffect, useRef } from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import { ThemedTitleV2 } from '@refinedev/mui';
+// import { ThemedTitleV2 } from '@refinedev/mui';
+// {/* <ThemedTitleV2
+//           collapsed={false}
+//           wrapperStyles={{
+//             fontSize: '22px',
+//             justifyContent: 'center',
+//           }}
+//         /> */}
 
 import { yariga } from 'assets';
 
@@ -63,25 +70,11 @@ export const Login: React.FC = () => {
         justifyContent="center"
         flexDirection="column"
       >
-        <ThemedTitleV2
-          collapsed={false}
-          wrapperStyles={{
-            fontSize: '22px',
-            justifyContent: 'center',
-          }}
-        />
+        <Typography align="center" color={'text.secondary'} fontSize="12px">
+          <img alt="yariga" src={yariga} />
+        </Typography>
 
         <GoogleButton />
-
-        <Typography align="center" color={'text.secondary'} fontSize="12px">
-          Powered by
-          <img
-            style={{ padding: '0 5px' }}
-            alt="Google"
-            src="https://refine.ams3.cdn.digitaloceanspaces.com/superplate-auth-icons%2Fgoogle.svg"
-          />
-          Google
-        </Typography>
       </Box>
     </Container>
   );
