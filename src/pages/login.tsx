@@ -6,12 +6,12 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { ThemedTitleV2 } from '@refinedev/mui';
 
-// import app logo
+import { yariga } from 'assets';
 
 import { CredentialResponse } from '../interfaces/google';
 
 const GOOGLE_CLIENT_ID =
-  '1041339102270-e1fpe2b6v6u1didfndh7jkjmpcashs4f.apps.googleusercontent.com';
+  '1003117598679-gu7fvobjsefcfb0fovpambq51sjcq8k5.apps.googleusercontent.com';
 
 export const Login: React.FC = () => {
   const { mutate: login } = useLogin<CredentialResponse>();
@@ -54,6 +54,7 @@ export const Login: React.FC = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: '#fcfcfc',
       }}
     >
       <Box
