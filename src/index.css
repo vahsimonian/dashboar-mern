@@ -18,7 +18,7 @@ a {
 }
 
 .property_details-img {
-  width: 100%;
+  width: 100vw;
 }
 
 @media screen and (max-width: 900px) {
